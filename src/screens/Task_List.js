@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, ImageBackground } from "react-native"
 
 import today_Image from "../../assets/imgs/today.jpg"
 
-export default class TaskList extends Component {
+export default class Task_List extends Component {
     render() {
         return (
             <View style={styles.container}>
@@ -11,7 +11,7 @@ export default class TaskList extends Component {
 
                 </ImageBackground>
                 <View style={styles.taskList}>
-
+                    <Text>Lista de tarefas</Text>
                 </View>
             </View>
         )
@@ -22,15 +22,11 @@ const styles = StyleSheet.create({
     container: {
         flex: 1
     },
-    background:{
+    background: {
         flex: 3
     },
-    taskList:{
-        flex:7
+    taskList: {
+        flex: 7
     }
 })
-
-
-
-
 

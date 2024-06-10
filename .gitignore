@@ -9,6 +9,8 @@ node_modules/
 android/
 dist/
 web-build/
+android/
+.vccode/
 
 # Native
 *.orig.*
