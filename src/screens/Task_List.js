@@ -20,10 +20,10 @@ export default class Task_List extends Component {
                 </ImageBackground>
                 <View style={styles.taskList}>
                     <Task description={"terminar TCC"}
-                        estimate_at={new Date()}
-                        done_at={new Date()} />
-                    <Task description={"apreesntar TCC"}
-                        estimate_at={new Date()}
+                        estimate_at={moment(new Date()).format('DD/MM/YYYY')}
+                        done_at={moment(new Date()).format('DD/MM/YYYY')} />
+                    <Task description={"apresentar TCC"}
+                        estimate_at={moment(new Date()).add(5, "days").format('DD/MM/YYYY')}
                         done_at={null} />
                         
                 </View>
