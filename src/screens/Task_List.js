@@ -20,10 +20,21 @@ export default class TaskList extends Component {
                     </View>
                 </ImageBackground>
                 <View style={styles.taskList}>
-                    <Task/>
-                    <Task/>
-                    <Task/>
-                    {/* askdjhfaskhfla */}
+                    <Task
+                        description="Estudar para prova de História"
+                        estimate_at={new Date()}
+                        done_at={new Date()}
+                    />
+                    <Task 
+                        description="Fazer a prova de História"
+                        estimate_at={new Date()}
+                        done_at={null}
+                    />
+                    <Task 
+                        description="Chorar após a prova de História"
+                        estimate_at={new Date()}
+                        done_at={null}
+                    />
                 </View>
             </View>
         )
@@ -34,24 +45,24 @@ const styles = StyleSheet.create({
     container: {
         flex: 1
     },
-    background:{
+    background: {
         flex: 3
     },
-    taskList:{
-        flex:7
+    taskList: {
+        flex: 7
     },
-    titleBar:{
+    titleBar: {
         flex: 1,
         justifyContent: 'flex-end'
     },
-    title:{
+    title: {
         fontFamily: 'Arial',
         fontSize: 50,
         color: '#FFF',
         marginLeft: 20,
         marginBottom: 20
     },
-    subTitle:{
+    subTitle: {
         fontFamily: 'Arial',
         fontSize: 20,
         color: '#FFF',
