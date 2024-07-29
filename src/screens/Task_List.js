@@ -25,7 +25,9 @@ export default class Task_List extends Component {
                     <Task description={"apresentar TCC"}
                         estimate_at={moment(new Date()).add(5, "days").format('DD/MM/YYYY')}
                         done_at={null} />
-                        
+                    <Task description={"Tarefa 3"}
+                        estimate_at={moment(new Date()).add(10, "days").format('DD/MM/YYYY')}
+                        done_at={moment(new Date()).format('DD/MM/YYYY')} />
                 </View>
             </View>
         )
