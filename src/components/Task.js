@@ -1,6 +1,6 @@
 import React from "react"
 import { StyleSheet, View, Text, TouchableWithoutFeedback } from "react-native"
-import { Icon } from "react-native-vector-icons/FontAwesome6"
+import Icon from "react-native-vector-icons/FontAwesome6"
 import moment from "moment"
 import 'moment/locale/pt-br'
 
@@ -10,7 +10,7 @@ export default props => {
             <TouchableWithoutFeedback onPress={() => alert("Olá")}>
                 <View style={styles.checkContainer}>
                     <View style={styles.done}>
-                        {/* <Icon name="check" size={20}></Icon> */}
+                        <Icon name="check" size={20}></Icon>
                     </View>
                 </View>
             </TouchableWithoutFeedback>

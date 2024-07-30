@@ -21,17 +21,12 @@ export default class TaskList extends Component {
                 </ImageBackground>
                 <View style={styles.taskList}>
                     <Task
-                        description="Estudar para prova de História"
+                        description="Estudar para prova DDM I"
                         estimate_at={new Date()}
                         done_at={new Date()}
                     />
                     <Task 
-                        description="Fazer a prova de História"
-                        estimate_at={new Date()}
-                        done_at={null}
-                    />
-                    <Task 
-                        description="Chorar após a prova de História"
+                        description="Fazer a prova de DDM I"
                         estimate_at={new Date()}
                         done_at={null}
                     />
