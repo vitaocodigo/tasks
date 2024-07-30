@@ -1,17 +1,16 @@
 import React, { Component } from "react"
 import { StyleSheet, View, Text, ImageBackground } from "react-native"
-import moment from "moment"
-import "moment/locale/pt-br"
 
 import moment from "moment"
 import 'moment/locale/pt-br'
 
 import today_Image from "../../assets/imgs/today.jpg"
+
 import Task from "../components/Task"
 
 export default class TaskList extends Component {
     render() {
-        const today = moment().locale('pt-br').format('ddd, D [de] MMM')
+        const today = moment().locale('pt-br').format('ddd, D [de] MMMM')
         return (
             <View style={styles.container}>
                 <ImageBackground source={today_Image} style={styles.background}>
@@ -21,13 +20,16 @@ export default class TaskList extends Component {
                     </View>
                 </ImageBackground>
                 <View style={styles.taskList}>
-                    <Task description={"terminar TCC"}
+                    <Task
+                        description="Estudar para prova DDM I"
                         estimate_at={new Date()}
-                        done_at={new Date()} />
-                    <Task description={"apreesntar TCC"}
+                        done_at={new Date()}
+                    />
+                    <Task 
+                        description="Fazer a prova de DDM I"
                         estimate_at={new Date()}
-                        done_at={null} />
-                        
+                        done_at={null}
+                    />
                 </View>
             </View>
         )
@@ -50,19 +52,21 @@ const styles = StyleSheet.create({
     },
     title: {
         fontFamily: 'Arial',
-        color: '#fff',
         fontSize: 50,
+        color: '#FFF',
         marginLeft: 20,
         marginBottom: 20
     },
     subTitle: {
         fontFamily: 'Arial',
-        color: '#fff',
         fontSize: 20,
+        color: '#FFF',
         marginLeft: 20,
         marginBottom: 30
     }
-
-
-
 })
+
+
+
+
+
